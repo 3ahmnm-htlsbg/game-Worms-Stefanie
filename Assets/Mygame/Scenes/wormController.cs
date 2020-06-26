@@ -50,7 +50,7 @@ public class wormController : MonoBehaviour
         if (Input.GetKeyDown(shootKey))
         {
             Debug.Log("Schiessen wenn taste gedrückt wurde");
-           GameObject Proj = Instantiate(Projektil,Pos.position,Quat);
+           GameObject Proj = Instantiate(Projektil, Pos.position, Quat);
             Rigidbody rbp = Proj.GetComponent(typeof(Rigidbody)) as Rigidbody;
             rbp.AddForce(p);
             
